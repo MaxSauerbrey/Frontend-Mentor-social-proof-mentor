@@ -1,0 +1,18 @@
+//!Colours //
+///Primary //
+$primary:hsl(300, 43%, 22%);
+$secondary: hsl(333, 80%, 67%);
+// /// Neutral ///
+$veryDarkMagenta: hsl(303, 10%, 53%);
+$lightGrayishMagenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+// $darkBlue: hsl(0, 0%, 100%);
+//! Selector colors */
+$selector_1: '--primary';
+$selector_2: '--secondary';
+$selector_3: '--veryDarkMagenta';
+$selector_4: '--lightGrayishMagenta';
+$selector_5: '--white';
+// $selector_6: '--darkBlue';
+//! Font size
+$general-font-size:16px;

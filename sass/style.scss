@@ -1,0 +1,20 @@
+        @use 'sass:map';
+        @use 'sass:list';
+        @import 'base/reset.scss';
+        @import 'base/typography.scss';
+        @import 'utils/variables.scss';
+        @import 'utils/function.scss';
+        @import 'layout/main.scss';
+        /*root */
+        
+         :root {
+            #{$selector_1}: $primary;
+            #{$selector_2}: $secondary;
+            #{$selector_3}: $veryDarkMagenta;
+            #{$selector_4}: $lightGrayishMagenta;
+            #{$selector_5}: $white;
+            // #{$selector_6}: $white;
+        }
+        /* media queries */
+        
+        // @media only screen and (min-width:380px)
