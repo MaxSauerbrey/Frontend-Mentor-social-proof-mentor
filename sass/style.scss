@@ -1,20 +1,205 @@
-        @use 'sass:map';
-        @use 'sass:list';
-        @import 'base/reset.scss';
-        @import 'base/typography.scss';
-        @import 'utils/variables.scss';
-        @import 'utils/function.scss';
-        @import 'layout/main.scss';
-        /*root */
-        
-         :root {
-            #{$selector_1}: $primary;
-            #{$selector_2}: $secondary;
-            #{$selector_3}: $veryDarkMagenta;
-            #{$selector_4}: $lightGrayishMagenta;
-            #{$selector_5}: $white;
-            // #{$selector_6}: $white;
+    @use 'sass:map';
+    @use 'sass:list';
+    @import 'base/reset.scss';
+    @import 'base/typography.scss';
+    @import 'utils/variables.scss';
+    @import 'utils/function.scss';
+    @import 'layout/main.scss';
+    /*root */
+    
+     :root {
+        #{$selector_1}: $primary;
+        #{$selector_2}: $secondary;
+        #{$selector_3}: $veryDarkMagenta;
+        #{$selector_4}: $lightGrayishMagenta;
+        #{$selector_5}: $white;
+        // #{$selector_6}: $white;
+    }
+    
+    body {
+        background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: left 0 top 0, right 0 bottom 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Spartan', sans-serif;
+    }
+    
+    main {
+        min-height: 100vh;
+        max-width: 95vw;
+        display: flex;
+        flex-direction: column;
+    }
+    /* media queries */
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        .card__header:first-of-type {
+            max-width: 28rem;
         }
-        /* media queries */
-        
-        // @media only screen and (min-width:380px)
+    }
+    
+    .card {
+        padding: pixelsToRems(79.5px) pixelsToRems(22.5px) 0;
+        &__title {
+            position: relative;
+            top: pixelsToRems(5px);
+            font-size: pixelsToRems(32px);
+            font-weight: 700;
+            letter-spacing: pixelsToRems(-1.6px);
+            color: $primary;
+            line-height: pixelsToRems(32px);
+            text-align: center;
+            // margin-bottom: pixelsToRems(24px);
+        }
+        &__paragraph {
+            margin-top: pixelsToRems(30px);
+            font-size: pixelsToRems(16px);
+            color: $veryDarkMagenta;
+            text-align: center;
+            letter-spacing: pixelsToRems(-1.12px);
+            line-height: pixelsToRems(25.28px);
+            font-weight: 500;
+            // height: 125px;
+            width: 100%;
+        }
+        &__puntuation {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-basis: pixelsToRems(208px);
+            margin-top: pixelsToRems(32px);
+        }
+        &__rating {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $lightGrayishMagenta;
+            // border: thin solid red;
+            font-size: pixelsToRems(13.28px);
+            font-weight: 700;
+            color: $primary;
+            border-radius: pixelsToRems(8px);
+            margin-bottom: pixelsToRems(16px);
+            &:nth-child(1) {
+                flex-basis: pixelsToRems(76px);
+            }
+            &:nth-child(2) {
+                flex-basis: pixelsToRems(76px);
+            }
+            &:nth-child(3) {
+                flex-basis: pixelsToRems(76px);
+            }
+        }
+        &__stars {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-basis: pixelsToRems(8px);
+            padding-bottom: pixelsToRems(12px);
+            align-content: center;
+            width: 38%;
+            position: relative;
+            bottom: pixelsToRems(1px);
+            left: pixelsToRems(2px);
+            & img {
+                padding-right: pixelsToRems(3.2px);
+            }
+        }
+        &__reviews {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 817px;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: pixelsToRems(16px);
+            & .card__review:nth-child(2) {
+                margin: 0;
+            }
+        }
+        &__review {
+            background-color: $primary;
+            border-radius: pixelsToRems(8px);
+            display: flex;
+            flex-direction: column;
+            margin: pixelsToRems(8px) 0;
+            padding: pixelsToRems(32px);
+            flex-basis: pixelsToRems(251px);
+            // width: 100%;
+            // grid-template-columns: 20% auto;
+        }
+        &__customer {
+            &-container {
+                display: flex;
+                flex-direction: row;
+            }
+            &-image img {
+                border-radius: 50%;
+                width: 50%;
+                position: relative;
+                top: 7px;
+            }
+            &-title {
+                font-size: pixelsToRems(12.8px);
+                color: $white;
+                font-weight: 700;
+                padding: pixelsToRems(4.8px) 0;
+            }
+            &-subtitle {
+                font-size: pixelsToRems(12.8px);
+                color: $secondary;
+                letter-spacing: 0;
+            }
+            &-paragraph {
+                color: $white;
+                margin-top: pixelsToRems(27.2px);
+                font-size: pixelsToRems(12.72px);
+                line-height: pixelsToRems(22.4px);
+                letter-spacing: 0;
+            }
+            &-info {
+                position: relative;
+                top: 7.2px;
+                right: 17px;
+            }
+        }
+    }
+    
+    .attribution {
+        font-size: pixelsToRems(13px);
+        margin-top: pixelsToRems(88px);
+        position: relative;
+        height: auto;
+        width: 99%;
+        // bottom: 5rem;
+        right: 0rem;
+        line-height: 10px;
+        text-align: center;
+        color: black;
+        & a {
+            color: $veryDarkMagenta;
+            &:hover {
+                color: $primary;
+            }
+        }
+        & p:nth-of-type(2) {
+            position: relative;
+            text-align: center;
+            bottom: -1rem;
+        }
+    }
+    
+    //     &__customer {
+    //         grid-row: span 2;
+    // }
+    // section {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+    // @media only screen and (min-width:380px)
