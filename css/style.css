@@ -389,7 +389,7 @@ section {
     text-align: left;
     padding: 0;
     position: relative;
-    top: 0.375rem;
+    top: 0.25rem;
     right: 0.0625rem;
   }
   .card__paragraph {
@@ -398,7 +398,7 @@ section {
     margin: 0;
     line-height: 1.6125rem;
     position: relative;
-    top: 0.0625rem;
+    bottom: 0.125rem;
   }
   .card__rating {
     display: flex;
@@ -446,7 +446,7 @@ section {
     display: flex;
     flex-basis: 33.8rem;
     position: relative;
-    bottom: 10px;
+    bottom: 12px;
     right: 32.8px;
   }
   .card__stars {
@@ -477,7 +477,7 @@ section {
     margin-left: 2.8125rem;
     min-height: 17.8926875rem;
     position: relative;
-    bottom: 0.0625rem;
+    bottom: 0.25rem;
     right: 0.5rem;
   }
   .card__reviews .card__review:nth-child(2) {
