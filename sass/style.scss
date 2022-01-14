@@ -335,8 +335,8 @@ section {
             text-align: left;
             padding: 0;
             position: relative;
-            top: pixelsToRems(2px);
-            right: pixelsToRems(0px);
+            top: pixelsToRems(0px);
+            right: pixelsToRems(1px);
         }
         &__paragraph {
             text-align: left;
@@ -394,7 +394,7 @@ section {
             display: flex;
             flex-basis: pixelsToRems(540.80px);
             position: relative;
-            bottom: pixelsToRems(15px);
+            bottom: pixelsToRems(17px);
             right: pixelsToRems(32.8px);
         }
         &__stars {

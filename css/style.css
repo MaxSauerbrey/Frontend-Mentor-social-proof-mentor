@@ -389,8 +389,8 @@ section {
     text-align: left;
     padding: 0;
     position: relative;
-    top: 0.125rem;
-    right: 0rem;
+    top: 0rem;
+    right: 0.0625rem;
   }
   .card__paragraph {
     text-align: left;
@@ -446,7 +446,7 @@ section {
     display: flex;
     flex-basis: 33.8rem;
     position: relative;
-    bottom: 0.9375rem;
+    bottom: 1.0625rem;
     right: 2.05rem;
   }
   .card__stars {
