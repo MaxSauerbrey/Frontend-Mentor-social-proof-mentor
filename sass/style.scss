@@ -334,12 +334,17 @@ section {
             line-height: pixelsToRems(48px);
             text-align: left;
             padding: 0;
+            position: relative;
+            top: pixelsToRems(6px);
+            right: pixelsToRems(1px);
         }
         &__paragraph {
             text-align: left;
             padding-top: pixelsToRems(18px);
             margin: 0;
             line-height: pixelsToRems(25.8px);
+            position: relative;
+            top: pixelsToRems(1px);
         }
         &__rating {
             display: flex;
@@ -389,7 +394,7 @@ section {
             display: flex;
             flex-basis: pixelsToRems(540.80px);
             position: relative;
-            bottom: 12px;
+            bottom: 10px;
             right: 32.8px;
         }
         &__stars {
@@ -420,7 +425,7 @@ section {
             margin-left: pixelsToRems(45px);
             min-height: pixelsToRems(286.283px);
             position: relative;
-            bottom: pixelsToRems(3px);
+            bottom: pixelsToRems(1px);
             right: pixelsToRems(8px);
             & .card__review:nth-child(2) {
                 margin: 10px;
