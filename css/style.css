@@ -389,7 +389,7 @@ section {
     text-align: left;
     padding: 0;
     position: relative;
-    top: 0.25rem;
+    top: 0.125rem;
     right: 0.0625rem;
   }
   .card__paragraph {
@@ -398,7 +398,7 @@ section {
     margin: 0;
     line-height: 1.6125rem;
     position: relative;
-    bottom: 0.125rem;
+    bottom: 0.25rem;
   }
   .card__rating {
     display: flex;
@@ -446,8 +446,8 @@ section {
     display: flex;
     flex-basis: 33.8rem;
     position: relative;
-    bottom: 12px;
-    right: 32.8px;
+    bottom: 0.875rem;
+    right: 2.05rem;
   }
   .card__stars {
     flex-basis: 250px;

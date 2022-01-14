@@ -335,7 +335,7 @@ section {
             text-align: left;
             padding: 0;
             position: relative;
-            top: pixelsToRems(4px);
+            top: pixelsToRems(2px);
             right: pixelsToRems(1px);
         }
         &__paragraph {
@@ -344,7 +344,7 @@ section {
             margin: 0;
             line-height: pixelsToRems(25.8px);
             position: relative;
-            bottom: pixelsToRems(2px);
+            bottom: pixelsToRems(4px);
         }
         &__rating {
             display: flex;
@@ -394,8 +394,8 @@ section {
             display: flex;
             flex-basis: pixelsToRems(540.80px);
             position: relative;
-            bottom: 12px;
-            right: 32.8px;
+            bottom: pixelsToRems(14px);
+            right: pixelsToRems(32.8px);
         }
         &__stars {
             flex-basis: 250px;
